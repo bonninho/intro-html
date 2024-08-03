@@ -2,13 +2,37 @@ body {
  background-color: #ffaed5;
 }
 
-#mainsobre {
+.horizontal {
     display: flex;
     flex-flow: row;
+    
 }
 
+.vertical {
+    display: flex;
+    flex-flow: column;
+}
 
-#sidebar > div {
+.margem5 {
+    padding: 5px;
+}
+
+.bordinha {
+    background-color:#b0e3f7;
+    border: thick double #14bff8;
+    border-radius:15px;
+    padding:10px;
+    align-items: center;
+    align-content:center;
+}
+
+.centraliza {
+    align-items: center;
+    align-content:center;
+    justify-content:center;
+}
+
+#sidebar div {
     display: flex;
     flex-flow:column;
     align-items:center;
@@ -19,11 +43,16 @@ body {
     margin-top: 5px;
 }
 
-#sidebar > div > img {
+img {
     width: 300px;
     border-radius:15px;
     margin-left:auto;
     margin-right:auto;
+    padding: 5px;
+}
+
+.gatos img {
+    width: 400px;
 }
 
 #maintexto {
@@ -36,14 +65,14 @@ body {
     margin-left: 5px
 }
 
-h2{
+h2 {
     color: #ff429c;
     font-family:courier new;
     font-size: 30px;
     text-decoration:underline;
 }
 
-h1{
+h1 {
     color: #ff429c;
     font-family:courier new;
     font-size: 40px;
@@ -70,10 +99,20 @@ a:link, a:visited {
     color:#4892ff
 }
 
-a:hover{
+a:hover {
   color:#64a2ff
 }
 
-iframe{
-    align:center;
+#galeria {
+    display:flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+#galeria img {
+    height: 300px;
+}
+
+#galeria > p {
+    flex-wrap:wrap;
 }
