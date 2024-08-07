@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+
+    <div id = "menu">
+        <b>
+            <a href="index.html">Home</a>
+            <a href="intro.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </b>
+    </div>
+
+    <h1>Contato</h1>
+
+    <div id="formulario" class="bordinha vertical">
+    <form>
+        <label for="nome"> Nome: </label><br>
+        <input type="text" id="nome" onkeyup="validaNome()"> 
+        <div id="txtNome"> </div>
+
+        <label for="email"> Email: </label><br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="txtEmail"></div>
+
+        <label for="assunto"> Assunto: </label><br>
+        <textarea name="assunto" id="assunto" cols="40" rows="6" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+        <button>Enviar</button>
+    </form>
+</div>
+    
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

@@ -116,3 +116,27 @@ a:hover {
 #galeria > p {
     flex-wrap:wrap;
 }
+
+form > * {
+    color: #06a6db;
+    font-family:courier new;
+}
+
+button {
+    background-color: #ffaed5;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    border: 1px solid
+}
+button:hover {
+    background-color: #ffcee6;
+    color:#7dd2f2
+}
+
+#tomadamenu {
+    width: 50px;
+}
+
+#menuApagao > *{
+    visibility: hidden;
+}
